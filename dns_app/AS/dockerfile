@@ -1,0 +1,9 @@
+FROM python:3.8
+
+WORKDIR /usr/app
+
+COPY AS.py /usr/app
+
+EXPOSE 53533/udp
+
+CMD ["python", "AS.py"]
